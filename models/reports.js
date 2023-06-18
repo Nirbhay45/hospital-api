@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const path = require('path');
 
+// this a schema for a report
 const reportSchema = new mongoose.Schema({
     createdFor:{
         type: String,

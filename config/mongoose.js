@@ -1,6 +1,8 @@
 // require the library
 const mongoose = require('mongoose');
 
+
+// url to mongo atlas 
 const url= 'mongodb+srv://nirbhay:fpdgfoqCO4taABXu@cluster0.v9oagcn.mongodb.net/?retryWrites=true&w=majority';
 mongoose.url = url;
 //connect to db

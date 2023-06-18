@@ -4,6 +4,7 @@
   "description": "Design the server side for a hospital",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nirbhay",

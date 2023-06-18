@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const path = require('path');
 
+
+// This is the schema for a doctor account
 const doctorSchema = new mongoose.Schema({
     username: {
         type: String,
