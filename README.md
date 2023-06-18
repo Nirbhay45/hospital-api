@@ -15,4 +15,39 @@
     - Status: 
      - Can be either of: [Negative, Travelled-Quarantine, Symptoms-Quarantine, Positive-Admit]
     - Date
- ## APIs
+ ## APIs(POST)
+  - /doctors/register  -> registering a doctor
+      req body
+      {
+        username: String, required,
+        password: String, required,
+        confirm_password: String, required
+      }
+  - /doctors/login  -> Login for doctor
+      req body
+      {
+        username: String, required,
+        password: String, required
+      }
+      res
+      {
+        token
+      }
+  - /patients/register -> Registers a patient
+      req body
+      {
+        name: String, required,
+        address: String, required,
+        phone: String, required
+      }
+  - /patients/:id/create_report  -> Creates a record for the patient by an authenticated doctor
+      id-> doctors id
+      provide jwt created in /doctors/login to authenticate if created by a genuine doctor
+      {
+        phone: String, required
+        status: String, required
+      }
+  - /patients/:id/all_reports → List all the reports of a patient oldest to latest
+      id -> patient's id 
+  - /reports/:status → List all the reports of all the patients filtered by a specific status
+      status -> [Negative, Travelled-Quarantine, Symptoms-Quarantine, Positive-Admit]
