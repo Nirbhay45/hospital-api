@@ -1,0 +1,21 @@
+{
+  "name": "hospital_api",
+  "version": "1.0.0",
+  "description": "Design the server side for a hospital",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nirbhay",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^5.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.0",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
