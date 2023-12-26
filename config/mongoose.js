@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 // url to mongo atlas 
-const url= 'mongodb+srv://nirbhay:lHwjMnP1tJ43n6sl@cluster0.v9oagcn.mongodb.net/?retryWrites=true&w=majority';
+const url= 'use your url 😉';
 mongoose.url = url;
 //connect to db
 mongoose.connect(url);
